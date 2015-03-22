@@ -64,8 +64,8 @@ function createTOC(){
 	$(window).scroll(function() {
     el.toggleClass('fixed', $(this).scrollTop() >= pos);
 	});
-	$('#toc2').resizable();//.parent('.ui-wrapper').draggable();
-	$('#toc').draggable();	
+	$('#toc').resizable();//.parent('.ui-wrapper').draggable();
+	$('#toc2').draggable();	
 };
 
 // Executes the createToc function
