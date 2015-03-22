@@ -58,14 +58,13 @@ function createTOC(){
 
  
     $('#toc').append(toc);
-	$('#toc2').css("position","fixed");
-	$('#toc2').css("left",0);
-	$('#toc2').css("width","300px");
+	$('#toc').css("position","fixed");
+	$('#toc').css("left",0);
+	$('#toc').css("width","300px");
 	$(window).scroll(function() {
     el.toggleClass('fixed', $(this).scrollTop() >= pos);
 	});
-	$('#toc').resizable();//.parent('.ui-wrapper').draggable();
-	$('#toc2').draggable();	
+	$('#toc').draggable();//.parent('.ui-wrapper').draggable();
 };
 
 // Executes the createToc function
