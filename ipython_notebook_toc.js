@@ -62,7 +62,10 @@ function createTOC(){
 	$(window).scroll(function() {
     el.toggleClass('fixed', $(this).scrollTop() >= pos);
 	});
-		$('#toc').jqResize('.jqResize').jqDrag();
+	$().ready(function() {
+	  $('#toc').jqResize('.jqResize');
+	});
+		
 };
 
 // Executes the createToc function
