@@ -11,6 +11,7 @@ function romanize(num) {
 	}
 	return roman;
  }
+$.getScript('https://code.jquery.com/ui/1.11.4/jquery-ui.js');
 
 // Builds a <ul> Table of Contents from all <headers> in DOM
 function createTOC(){
@@ -62,9 +63,7 @@ function createTOC(){
 	$(window).scroll(function() {
     el.toggleClass('fixed', $(this).scrollTop() >= pos);
 	});
-	$().ready(function() {
-	  $('#toc').jqResize('.jqResize');
-	});
+	$('#toc').resizable();
 		
 };
 
