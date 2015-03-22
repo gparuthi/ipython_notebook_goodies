@@ -56,7 +56,12 @@ function createTOC(){
 
  
     $('#toc').append(toc);
-
+	$('#toc').css("position","fixed");
+	$('#toc').css("left",0);
+	$('#toc').css("width","200px");
+	$(window).scroll(function() {
+    el.toggleClass('fixed', $(this).scrollTop() >= pos);
+	});
 };
 
 // Executes the createToc function
