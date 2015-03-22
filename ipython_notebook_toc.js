@@ -58,13 +58,13 @@ function createTOC(){
 
  
     $('#toc').append(toc);
-	$('#toc').css("position","fixed");
-	$('#toc').css("left",0);
-	$('#toc').css("width","300px");
+	$('#toc2').css("position","fixed");
+	$('#toc2').css("left",0);
+	$('#toc2').css("width","300px");
 	$(window).scroll(function() {
     el.toggleClass('fixed', $(this).scrollTop() >= pos);
 	});
-	// $('#toc').resizable().parent('.ui-wrapper').draggable();
+	$('#toc2').resizable();//.parent('.ui-wrapper').draggable();
 	$('#toc').draggable();	
 };
 
