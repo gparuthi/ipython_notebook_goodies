@@ -58,10 +58,11 @@ function createTOC(){
     $('#toc').append(toc);
 	$('#toc').css("position","fixed");
 	$('#toc').css("left",0);
-	$('#toc').css("width","200px");
+	$('#toc').css("width","300px");
 	$(window).scroll(function() {
     el.toggleClass('fixed', $(this).scrollTop() >= pos);
 	});
+		$('#toc').jqResize('.jqResize').jqDrag();
 };
 
 // Executes the createToc function
