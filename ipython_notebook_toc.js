@@ -61,7 +61,8 @@ function createTOC(){
 	$('#toc').css("position","fixed");
 	$('#toc').css("left",0);
 	$('#toc').css("width","300px");
-	$('#toc').css("font-size","10px");
+	$('#toc').css("font-size","9px");
+	$('#toc').css("top","115px");
 	$(window).scroll(function() {
     el.toggleClass('fixed', $(this).scrollTop() >= pos);
 	});
