@@ -11,7 +11,20 @@ and provides anchors (added where needed).
 
 **Usage:** Include the following at the top of your notebook:
 
-	<h1 id="tocheading">Table of Contents</h1>
-	<div id="toc"></div>
-	<script src="https://kmahelona.github.io/ipython_notebook_goodies/ipython_notebook_toc.js"></script>
+- Add a cell with the following:
+```
+<h1 id="tocheading">Table of Contents</h1>
+<div id="toc"></div>
+```
+
+- Add a cell that includes
+```
+%%javascript
+$.getScript('https://gparuthi.github.io/ipython_notebook_goodies/ipython_notebook_toc.js')
+```
+
+## Preview
+![alt text][preview]
+
+[preview]: https://gparuthi.github.io/ipython_notebook_goodies/preview.jpg "Preview"
 
