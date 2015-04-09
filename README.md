@@ -9,6 +9,8 @@ Random goodies for use in iPython Notebooks
 Make a table of contents for your notebook. Uses headings (e.g. H1, H2, etc.) to build TOC, 
 and provides anchors (added where needed).
 
+Updated to make an always on top, resizeable TOC.
+
 **Usage:** Include the following at the top of your notebook:
 
 - Add a cell with the following:
@@ -24,7 +26,7 @@ $.getScript('https://gparuthi.github.io/ipython_notebook_goodies/ipython_noteboo
 ```
 
 ## Preview
-![alt text][preview]
+![preview]
 
-[preview]: https://gparuthi.github.io/ipython_notebook_goodies/preview.jpg "Preview"
+[preview]: https://gparuthi.github.io/ipython_notebook_goodies/preview.png "Preview"
 
